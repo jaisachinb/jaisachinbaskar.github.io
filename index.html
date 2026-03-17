@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jai Sachin Baskar — Product Manager specialising in AI/ML products, growth analytics, and user discovery. Experience across UQ, HEC Paris, and University of Sydney. Skills: roadmap planning, PRD writing, A/B testing, Python, SQL, NLP, OKRs, cross-functional collaboration, responsible AI, human-in-the-loop design.">
+<meta name="keywords" content="Product Manager, Associate Product Manager, APM, AI Product Manager, Growth PM, Technical PM, roadmap, backlog, PRD, user stories, OKRs, KPIs, A/B testing, funnel analysis, cohort analysis, retention, activation, Python, SQL, NLP, machine learning, LLM, responsible AI, human-in-the-loop, go-to-market, feature prioritisation, sprint planning, agile, cross-functional, stakeholder management, user research, usability testing, journey mapping, Jobs-to-be-Done, product discovery, data-driven, growth analytics, platform governance, trust and safety">
+<title>Jai Sachin Baskar - Product Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#19180f;--ink-soft:#58554a;--ink-faint:#9c9889;
+  --paper:#f8f6f0;--paper-warm:#f0ede5;
+  --accent:#b84c10;--accent-light:#f2e8e1;--rule:#e2ddd4;
+  --serif:'Libre Baskerville',Georgia,serif;
+  --sans:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3.5rem;background:rgba(248,246,240,0.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nav-logo{font-family:var(--serif);font-size:.93rem;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+
+.hero{min-height:100vh;display:grid;grid-template-columns:1.3fr .7fr}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:9rem 3.5rem 6rem}
+.hero-eyebrow{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem;opacity:0;animation:fadeUp .8s .2s forwards}
+
+
+
+.hero-name{font-family:var(--serif);font-size:clamp(2.6rem,4.2vw,4.8rem);line-height:1.05;letter-spacing:-.02em}
+.hero-name em{font-style:italic;color:var(--accent)}
+.hero-bio{font-size:1rem;color:var(--ink-soft);max-width:44ch;line-height:1.85;margin-bottom:2rem;opacity:0;animation:fadeUp .8s .5s forwards}
+.hero-links{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:2.2rem;opacity:0;animation:fadeUp .8s .6s forwards}
+.hero-link{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;padding:.4rem .9rem;border:1px solid var(--rule);transition:all .2s}
+.hero-link:hover{border-color:var(--accent);color:var(--accent)}
+.hero-cta{display:flex;gap:1rem;opacity:0;animation:fadeUp .8s .7s forwards}
+.btn{display:inline-block;padding:.7rem 1.8rem;font-family:var(--sans);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;border:none;cursor:pointer}
+.btn-primary{background:var(--ink);color:var(--paper)}.btn-primary:hover{background:var(--accent)}
+.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--rule)}.btn-outline:hover{border-color:var(--ink)}
+
+.hero-right{display:flex;align-items:center;justify-content:center;padding:9rem 3.5rem 6rem 0;opacity:0;animation:fadeIn 1.2s .5s forwards}
+.hero-badges{display:flex;flex-direction:column;width:100%;max-width:268px}
+.badge{padding:1.55rem 1.85rem;border:1px solid var(--rule)}.badge+.badge{margin-top:-1px}
+.badge:first-child{background:var(--ink)}
+.badge-num{font-family:var(--serif);font-size:2.3rem;line-height:1;margin-bottom:.22rem}
+.badge:first-child .badge-num{color:var(--paper)}.badge:not(:first-child) .badge-num{color:var(--accent)}
+.badge-label{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase}
+.badge:first-child .badge-label{color:rgba(248,246,240,.4)}.badge:not(:first-child) .badge-label{color:var(--ink-faint)}
+
+section{padding:6.5rem 3.5rem;position:relative;z-index:1}
+.section-header{display:flex;align-items:baseline;gap:1.4rem;margin-bottom:3.2rem}
+.section-num{font-family:var(--serif);font-size:.78rem;color:var(--accent);font-style:italic}
+.section-title{font-family:var(--serif);font-size:clamp(1.6rem,2.7vw,2.4rem);letter-spacing:-.02em}
+.section-rule{flex:1;height:1px;background:var(--rule);margin-left:1rem}
+
+#about{background:var(--paper-warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:4.5rem;align-items:start}
+.about-text p{font-size:.98rem;color:var(--ink-soft);margin-bottom:1.25rem;line-height:1.85}
+.about-text p strong{color:var(--ink);font-weight:500}
+.about-aside{display:flex;flex-direction:column;gap:1rem}
+.aside-block{padding:1.15rem 1.4rem;border:1px solid var(--rule);background:var(--paper)}
+.aside-label{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.32rem}
+.aside-value{font-family:var(--serif);font-size:.85rem;color:var(--ink);line-height:1.5}
+
+#education{max-width:780px;margin:0 auto}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}
+.edu-card{border:1px solid var(--rule);padding:1.9rem 1.7rem;background:var(--paper);display:flex;flex-direction:column;gap:.55rem;transition:box-shadow .25s,transform .25s}
+.edu-card:hover{box-shadow:0 6px 28px rgba(25,24,15,.07);transform:translateY(-2px)}
+.edu-logo{width:46px;height:46px;border-radius:7px;background:var(--paper-warm);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;margin-bottom:.35rem;overflow:hidden}
+.edu-logo img{width:100%;height:100%;object-fit:contain;padding:5px}
+.edu-school{font-size:.78rem;color:var(--accent);font-weight:500;letter-spacing:.03em}
+.edu-degree{font-family:var(--serif);font-size:.93rem;line-height:1.3;color:var(--ink)}
+.edu-period{font-size:.7rem;color:var(--ink-faint);font-style:italic;font-family:var(--serif)}
+.edu-detail{font-size:.78rem;color:var(--ink-soft);margin-top:.15rem}
+
+#experience{background:var(--paper-warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+#experience>div{max-width:960px;margin:0 auto}
+.timeline{display:flex;flex-direction:column}
+.timeline-item{display:grid;grid-template-columns:195px 1fr;gap:2.8rem;padding:2.3rem 0;border-bottom:1px solid var(--rule)}
+.timeline-item:first-child{border-top:1px solid var(--rule)}
+.tl-period{font-size:.7rem;color:var(--ink-faint);margin-bottom:.28rem;font-family:var(--serif);font-style:italic}
+.tl-company{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.tl-role{font-family:var(--serif);font-size:1.08rem;margin-bottom:.52rem;line-height:1.3}
+.tl-desc{font-size:.86rem;color:var(--ink-soft);line-height:1.75}
+.tl-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.82rem}
+.tag{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:.24rem .68rem;border:1px solid var(--rule);color:var(--ink-soft);background:var(--paper)}
+
+#projects{}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.project-card{background:var(--paper-warm);border:1px solid var(--rule);padding:1.75rem;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.project-card:hover{box-shadow:0 8px 36px rgba(25,24,15,.08);transform:translateY(-3px)}
+.project-num{font-family:var(--serif);font-size:.68rem;color:var(--ink-faint);font-style:italic;margin-bottom:.82rem}
+.project-type{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.58rem}
+.project-title{font-family:var(--serif);font-size:1.03rem;line-height:1.25;margin-bottom:.78rem}
+.project-desc{font-size:.82rem;color:var(--ink-soft);line-height:1.7;flex:1;margin-bottom:1.05rem}
+.project-outcome{padding:.68rem .82rem;background:var(--accent-light);border-left:2px solid var(--accent);font-size:.76rem;color:var(--ink-soft)}
+.project-outcome strong{color:var(--accent);font-weight:500}
+
+#recognition{background:var(--paper-warm);border-top:1px solid var(--rule)}
+#recognition>div{max-width:960px;margin:0 auto}
+.recog-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
+.recog-block h3{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.3rem;padding-bottom:.68rem;border-bottom:1px solid var(--rule)}
+.pub-list,.award-list{list-style:none;display:flex;flex-direction:column;gap:1rem}
+.pub-item{padding-bottom:1rem;border-bottom:1px solid var(--rule)}
+.pub-item:last-child{border-bottom:none}
+.pub-venue{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.26rem}
+.pub-title{font-family:var(--serif);font-size:.87rem;line-height:1.4;color:var(--ink)}
+.pub-sub{font-size:.7rem;color:var(--ink-faint);font-style:italic;margin-top:.16rem}
+.award-item{display:flex;gap:1rem;align-items:flex-start}
+.award-yr{flex-shrink:0;width:44px;height:44px;background:var(--accent-light);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.65rem;color:var(--accent);font-style:italic;text-align:center;line-height:1.2}
+.award-text{font-size:.84rem;color:var(--ink-soft);line-height:1.5}
+.award-text strong{color:var(--ink);font-weight:500;display:block;margin-bottom:.07rem}
+
+#skills{border-top:1px solid var(--rule)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.skill-group{padding:1.6rem;border:1px solid var(--rule);background:var(--paper-warm)}
+.skill-group-title{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.95rem;padding-bottom:.6rem;border-bottom:1px solid var(--rule)}
+.skill-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.skill-list li{font-size:.82rem;color:var(--ink-soft);display:flex;align-items:center;gap:.5rem}
+.skill-list li::before{content:'';width:4px;height:4px;background:var(--accent);flex-shrink:0}
+
+footer{background:var(--ink);color:var(--paper);padding:4.5rem 3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.footer-eyebrow{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.82rem}
+footer h2{font-family:var(--serif);font-size:clamp(1.7rem,3.2vw,2.8rem);line-height:1.1;letter-spacing:-.02em}
+footer h2 em{font-style:italic;color:var(--accent)}
+.footer-right{display:flex;flex-direction:column;gap:.62rem}
+.contact-link{display:flex;align-items:center;gap:1rem;padding:.92rem 1.2rem;border:1px solid rgba(248,246,240,.1);text-decoration:none;color:var(--paper);font-size:.82rem;transition:border-color .2s,background .2s}
+.contact-link:hover{border-color:var(--accent);background:rgba(184,76,16,.08)}
+.contact-link-label{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:.05rem}
+.footer-bottom{background:var(--ink);padding:1.2rem 3.5rem;border-top:1px solid rgba(248,246,240,.07);display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:.68rem;color:var(--ink-faint);letter-spacing:.05em}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:960px){
+  nav{padding:1rem 1.5rem}.nav-links{gap:1rem}
+  .hero{grid-template-columns:1fr}
+  .hero-left{padding:8rem 1.5rem 3rem}.hero-right{padding:0 1.5rem 4rem;justify-content:flex-start}
+  .about-grid,.recog-grid,footer{grid-template-columns:1fr}
+  .edu-grid,.projects-grid{grid-template-columns:1fr 1fr}
+  .skills-grid{grid-template-columns:1fr 1fr}
+  section{padding:5rem 1.5rem}
+  footer{padding:4rem 1.5rem}
+  .footer-bottom{padding:1.2rem 1.5rem;flex-direction:column;gap:.4rem;text-align:center}
+  .timeline-item{grid-template-columns:1fr;gap:.4rem}
+}
+@media(max-width:560px){
+  .edu-grid,.projects-grid,.skills-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Jai Sachin Baskar</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#offer">What I Bring</a></li><li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#recognition">Recognition</a></li>
+    <li><a href="#exploring">Thinking</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Product Manager &middot; AI &amp; Data &middot; India</p>
+    <h1 class="hero-name" style="margin-bottom:1.4rem;opacity:0;animation:fadeUp .8s .35s forwards">Jai Sachin<br><em>Baskar</em></h1>
+    <p class="hero-bio">I turn user behaviour and messy data into product decisions. From owning feature roadmaps and cross-functional delivery at HEC Paris to evaluating AI-native platform strategy at UQ &mdash; I bridge discovery, growth analytics, and go-to-market thinking to help teams prioritise, ship, and iterate faster.</p>
+    <div class="hero-links">
+      <a href="/cdn-cgi/l/email-protection#076d666e7466646f6e6965373247606a666e6b2964686a" class="contact-link"><div><span class="contact-link-label">Email</span><span class="__cf_email__" data-cfemail="167c777f6577757e7f7874262356717b777f7a3875797b">[email&#160;protected]</span></div></a>
+      <a href="https://scholar.google.com" target="_blank" class="hero-link">&#8599; Scholar</a>
+      <a href="https://www.linkedin.com/in/jaisachin/" target="_blank" class="hero-link">&#8599; LinkedIn</a>
+      <a href="https://github.com/jaisachinb" target="_blank" class="hero-link">&#8599; GitHub</a>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-badges">
+      <div class="badge"><div class="badge-num">4</div><div class="badge-label">International Product Orgs</div></div>
+      <div class="badge"><div class="badge-num">1</div><div class="badge-label">Design Patent Filed</div></div>
+      <div class="badge"><div class="badge-num">4</div><div class="badge-label">Published Papers &amp; Patent Filed</div></div>
+      <div class="badge"><div class="badge-num">12K+</div><div class="badge-label">Users Studied &amp; Analysed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- keyword summary for text extractors -->
+<div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+  Jai Sachin Baskar. Product Manager. Associate Product Manager. APM. AI Product Manager. Growth PM. Technical Product Manager. Skills: product roadmap, backlog management, feature prioritisation, PRD writing, user stories, sprint planning, agile, OKRs, KPI definition, go-to-market strategy, cross-functional collaboration, stakeholder management, user discovery, user interviews, usability testing, journey mapping, Jobs-to-be-Done, A/B testing, funnel analysis, cohort analysis, retention metrics, activation, North Star metric, growth analytics, Python, SQL, NLP, machine learning, LLM, responsible AI, human-in-the-loop design, model evaluation, technical specifications, engineering collaboration, platform governance, trust and safety design. Experience: University of Queensland, HEC Paris, University of Sydney, IIIT Kottayam. Education: IIT Madras, SRM Institute. Harvard HPAIR Delegate 2025. IEEE Reviewer 2026.
+</div>
+
+<section id="about">
+  <div class="section-header reveal"><span class="section-num">01</span><h2 class="section-title">About Me</h2><div class="section-rule"></div></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I work at the intersection of user behaviour, data, and product strategy. My background spans end-to-end product discovery, growth analytics, and AI/ML systems &mdash; applied across four international organisations to help cross-functional teams prioritise backlogs correctly, define OKRs that stick, and ship with confidence.</p>
+      <p>What separates me from most PMs is that I've been on both sides of the data. I've built the analytical pipelines, run the user discovery, and written the PRDs that turned findings into roadmap decisions. I don't hand off insights &mdash; I drive them through to product outcomes.</p>
+    </div>
+    <div class="about-aside reveal">
+      <div class="aside-block"><div class="aside-label">Location</div><div class="aside-value">India &middot; Open to Remote &amp; International Roles</div></div>
+      
+      <div class="aside-block"><div class="aside-label">Languages</div><div class="aside-value">Tamil (native) &middot; Hindi &middot; English<br>Malayalam (novice)</div></div>
+      <div class="aside-block"><div class="aside-label">Target Roles</div><div class="aside-value">Product Manager &middot; Associate PM<br>AI Product &middot; Growth PM</div></div>
+      <div class="aside-block"><div class="aside-label">Notable</div><div class="aside-value">Harvard HPAIR Delegate 2025<br>IEEE Invited Reviewer 2026</div></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="offer" style="border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">What I Bring to Product</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule)">
+
+    <div class="reveal" style="padding:2.4rem 2.2rem;border-right:1px solid var(--rule)">
+      <div style="font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem;padding-bottom:.75rem;border-bottom:1px solid var(--rule)">01 &mdash; User Discovery &amp; Research</div>
+      <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.8;margin-bottom:1.4rem">I run discovery end-to-end &mdash; from structuring problem statements and writing user stories to synthesising qualitative and quantitative signals into PRDs and sprint-ready requirements. Across UQ, HEC Paris, and the University of Sydney, I've designed studies, run usability evaluations, and connected raw behavioural data to backlog decisions. I know how to talk to users and how to turn what they tell you into actionable requirements.</p>
+      <div style="display:flex;flex-direction:column;gap:.55rem">
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">User interviews, usability testing &amp; surveys</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Journey mapping &amp; Jobs-to-be-Done framing</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">PRD writing &amp; user story definition</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Cross-functional stakeholder alignment</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="padding:2.4rem 2.2rem;border-right:1px solid var(--rule);background:var(--paper-warm)">
+      <div style="font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem;padding-bottom:.75rem;border-bottom:1px solid var(--rule)">02 &mdash; Data-Driven Prioritisation</div>
+      <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.8;margin-bottom:1.4rem">I don't just read dashboards &mdash; I build them. From Python NLP pipelines processing 12,000+ user entries to predictive models driving retail growth strategy, I work with data at the level most PMs outsource. I define North Star metrics, design A/B tests, run funnel and cohort analysis, and translate retention and activation signals into prioritised roadmap decisions.</p>
+      <div style="display:flex;flex-direction:column;gap:.55rem">
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">OKR &amp; KPI definition &middot; North Star metrics</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">A/B testing &middot; Python &middot; SQL &middot; NLP</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Funnel, cohort &amp; retention analysis</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Feature prioritisation &amp; roadmap planning</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="padding:2.4rem 2.2rem">
+      <div style="font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem;padding-bottom:.75rem;border-bottom:1px solid var(--rule)">03 &mdash; AI Product Strategy</div>
+      <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.8;margin-bottom:1.4rem">AI/ML isn't a feature I bolt onto products &mdash; it's the context I've worked in across every role. I've evaluated machine learning systems end-to-end, studied responsible AI adoption in enterprise workflows, and published on human-in-the-loop design and AI trust. That means I understand model evaluation, know when LLM-based features create more risk than value, and can write technical specs engineers actually trust.</p>
+      <div style="display:flex;flex-direction:column;gap:.55rem">
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">AI/ML product evaluation &amp; model trade-offs</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Responsible AI &middot; human-in-the-loop design</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">SaaS &rarr; AI-native product transitions</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.7rem">
+          <span style="color:var(--accent);font-size:.8rem;margin-top:.15rem;flex-shrink:0">&#8594;</span>
+          <span style="font-size:.82rem;color:var(--ink-soft)">Technical specifications &amp; engineering collaboration</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-header reveal"><span class="section-num">03</span><h2 class="section-title">Education</h2><div class="section-rule"></div></div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/200px-IIT_Madras_Logo.svg.png" alt="IIT Madras" onerror="this.parentElement.textContent='IITM'"></div>
+      <div class="edu-school">Indian Institute of Technology Madras</div>
+      <div class="edu-degree">Diploma in Data Science &amp; Applications</div>
+      <div class="edu-period">May 2023 &ndash; Mar 2026</div>
+      <div class="edu-detail">Machine Learning &middot; Statistical Modelling &middot; Python &middot; SQL &middot; Predictive Analytics &middot; A/B Testing</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Srm_university.png/200px-Srm_university.png" alt="SRM" onerror="this.parentElement.textContent='SRM'"></div>
+      <div class="edu-school">SRM Institute of Science and Technology</div>
+      <div class="edu-degree">B.Tech, Computer Science</div>
+      <div class="edu-period">June 2022 &ndash; May 2026</div>
+      <div class="edu-detail">GPA: 8.52 / 10 &middot; Algorithms &middot; Software Engineering &middot; AI Systems &middot; Human-Computer Interaction</div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div>
+    <div class="section-header reveal"><span class="section-num">04</span><h2 class="section-title">Experience</h2><div class="section-rule"></div></div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div><div class="tl-period">Apr 2025 &ndash; Sep 2025</div><div class="tl-company">The University of Queensland Business School</div></div>
+        <div>
+          <div class="tl-role">Product Researcher &mdash; Brisbane, Australia</div>
+          <div class="tl-desc">Led end-to-end product evaluation of a complex digital platform, defining usability benchmarks and writing specifications that assessed how feature design influenced user trust, conversion behaviour, and decision-making. Synthesised mixed-methods discovery findings into prioritised PRD-style recommendations, driving cross-functional alignment on design trade-offs. Presented risk-perception insights to stakeholders in a format that directly influenced the product roadmap.</div>
+          <div class="tl-tags"><span class="tag">Product Roadmap</span><span class="tag">Cross-Functional Alignment</span><span class="tag">PRD Writing</span><span class="tag">Stakeholder Management</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div><div class="tl-period">Sep 2024 &ndash; Dec 2024</div><div class="tl-company">HEC Paris Business School</div></div>
+        <div>
+          <div class="tl-role">Product Research Analyst &mdash; Paris, France</div>
+          <div class="tl-desc">Built a Python NLP pipeline to process 12,000+ unstructured user feedback entries, converting qualitative signal into a structured, prioritised feature backlog. Identified activation and retention friction points that directly informed sprint planning and UX iteration. Delivered a data-to-decision pipeline the product team used immediately to update the roadmap and go-to-market approach for the next release cycle.</div>
+          <div class="tl-tags"><span class="tag">Python &middot; NLP &middot; SQL</span><span class="tag">Backlog Prioritisation</span><span class="tag">Retention &amp; Activation</span><span class="tag">Go-to-Market</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div><div class="tl-period">Jan 2024 &ndash; Jul 2024</div><div class="tl-company">University of Sydney Business School</div></div>
+        <div>
+          <div class="tl-role">AI Product Researcher &mdash; Sydney, Australia</div>
+          <div class="tl-desc">Analysed AI/ML adoption patterns across enterprise workflows, identifying the gap between how AI products are designed and how users actually engage with them. Produced strategic recommendations on platform governance, responsible AI compliance, and product positioning that influenced go-to-market decisions. Findings contributed to policy discussions on human-in-the-loop design standards for AI-native products.</div>
+          <div class="tl-tags"><span class="tag">AI/ML Product Strategy</span><span class="tag">Responsible AI</span><span class="tag">Go-to-Market</span><span class="tag">Human-in-the-Loop</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div><div class="tl-period">May 2023 &ndash; Nov 2023</div><div class="tl-company">Indian Institute of Information Technology Kottayam</div></div>
+        <div>
+          <div class="tl-role">Product Designer &amp; Engineer &mdash; Kerala, India</div>
+          <div class="tl-desc">Owned a hardware security product end-to-end: defined product requirements, wrote technical specifications, collaborated with engineering on system architecture, and led UX-informed design decisions to maximise accessibility and detection accuracy. Shipped a notification workflow that measurably reduced human response time. Filed a design patent and won Best Research Paper at IEEE 2024 &mdash; full product ownership from discovery to launch.</div>
+          <div class="tl-tags"><span class="tag">Technical Specifications</span><span class="tag">Engineering Collaboration</span><span class="tag">End-to-End Ownership</span><span class="tag">Design Patent</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header reveal"><span class="section-num">05</span><h2 class="section-title">Projects</h2><div class="section-rule"></div></div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-num">001</div><div class="project-type">AI Product &middot; Safety Systems</div>
+      <div class="project-title">DeepRoadGuard &mdash; AI Safety Product</div>
+      <div class="project-desc">Defined the product problem, wrote technical specifications, and led cross-functional development of a multimodal AI/ML solution improving driver situational awareness. Translated the core user need &mdash; safe navigation in low-visibility conditions &mdash; into a machine learning system with measurable accuracy gains and a clear go-to-market use case.</div>
+      <div class="project-outcome"><strong>Validated:</strong> IEEE Conference Paper, 2025 &middot; Peer-reviewed methodology.</div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">002</div><div class="project-type">Product Analytics &middot; NLP</div>
+      <div class="project-title">User Feedback Intelligence Tool</div>
+      <div class="project-desc">Owned end-to-end: scoped the problem, built a Python NLP data pipeline to process 12,000+ unstructured user feedback entries, and delivered a prioritised feature backlog with user stories the product team could take directly into sprint planning. Surfaced activation and retention friction points that updated the roadmap and reduced time-to-insight compared to manual analysis.</div>
+      <div class="project-outcome"><strong>Impact:</strong> Feature roadmap updated based on surfaced insights &middot; 12,000+ entries processed.</div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">003</div><div class="project-type">Healthcare AI &middot; Clinical Product</div>
+      <div class="project-title">Intracranial Hemorrhage Detection</div>
+      <div class="project-desc">Defined product requirements for a machine learning system in emergency clinical settings, balancing model accuracy against real-world constraints: latency, compute, and clinician trust. Applied human-in-the-loop design principles to determine how AI outputs are surfaced to users under time pressure &mdash; a technical PM problem as much as an engineering one.</div>
+      <div class="project-outcome"><strong>Validated:</strong> IEEE Paper, 2025 &middot; Deployed in clinical triage context.</div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">004</div><div class="project-type">Growth Analytics &middot; Retail Strategy</div>
+      <div class="project-title">Retail Growth via Predictive Analytics</div>
+      <div class="project-desc">Ran a full growth analytics cycle: analysed consumer purchase patterns, defined key conversion and retention signals, and built a predictive model to forecast purchase trends. Generated data-driven merchandising recommendations that function as a growth strategy brief &mdash; identifying where to invest, what to cut, and how to improve average order value and repeat purchase rate.</div>
+      <div class="project-outcome"><strong>Recognised:</strong> IJCSIS Journal, 2024 &middot; Runner-up Best Paper.</div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">005</div><div class="project-type">Security Product &middot; Hardware</div>
+      <div class="project-title">UART Logic-Lock Authentication</div>
+      <div class="project-desc">Took a hardware security product from problem definition to patent: wrote technical specifications, collaborated with engineering on system architecture, and applied user-centred design to maximise accessibility and detection accuracy. Shipped an alerting workflow that reduced human response time. Full product lifecycle ownership &mdash; solo from discovery to launch to IP protection.</div>
+      <div class="project-outcome"><strong>Patent No.</strong> 202541088733 &middot; Best Paper, IEEE 2024.</div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">006</div><div class="project-type">Platform Product &middot; Trust &amp; Safety</div>
+      <div class="project-title">Metaverse Platform Trust Study</div>
+      <div class="project-desc">Conducted a structured product audit of a next-generation social platform, identifying structural vulnerabilities that degraded user trust, created misinformation risk, and reduced engagement. Produced a trust &amp; safety framework &mdash; a prioritised set of product requirements for rebuilding the platform with responsible AI design, user control, and transparent governance as first-class features.</div>
+      <div class="project-outcome"><strong>Focus:</strong> Trust &amp; Safety Design &middot; Misinformation &middot; Platform Governance.</div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div>
+    <div class="section-header reveal"><span class="section-num">06</span><h2 class="section-title">Recognition &amp; Patents</h2><div class="section-rule"></div></div>
+    <div class="recog-grid">
+      <div class="recog-block reveal">
+        <h3>Published Work &amp; Patents</h3>
+        <ul class="pub-list">
+          <li class="pub-item"><div class="pub-venue">IEEE &middot; 2025</div><div class="pub-title">Enhancing Security in Logic-Locked Systems</div></li>
+          <li class="pub-item"><div class="pub-venue">IEEE Conference &middot; 2025</div><div class="pub-title">DeepRoadGuard &mdash; Multimodal AI Safety System</div></li>
+          <li class="pub-item"><div class="pub-venue">IEEE &middot; 2025</div><div class="pub-title">Computationally Efficient Deep Learning for Automated Intracranial Hemorrhage Detection in Emergency CT Scans</div></li>
+          <li class="pub-item"><div class="pub-venue">IJCSIS Journal &middot; 2024</div><div class="pub-title">Retail Optimization via Data Mining &amp; Predictive Modeling</div></li>
+          <li class="pub-item"><div class="pub-venue">Design Patent &middot; Filed 2025</div><div class="pub-title">UART-Based Key Authentication in a Logic-Locked System</div><div class="pub-sub">Patent No. 202541088733</div></li>
+        </ul>
+      </div>
+      <div class="recog-block reveal">
+        <h3>Honors &amp; Awards</h3>
+        <ul class="award-list">
+          <li class="award-item"><div class="award-yr">2026</div><div class="award-text"><strong>Invited Reviewer &mdash; IEEE CCIC</strong>IEEE Contemporary Computing Innovations Conference</div></li>
+          <li class="award-item"><div class="award-yr">2025</div><div class="award-text"><strong>Indian Delegate &mdash; HPAIR</strong>Harvard Project for Asian &amp; International Relations</div></li>
+          <li class="award-item"><div class="award-yr">2024</div><div class="award-text"><strong>Best Research Paper (Winner) &mdash; IEEE</strong>Preventing IP Theft in Integrated Circuits</div></li>
+          <li class="award-item"><div class="award-yr">2024</div><div class="award-text"><strong>Best Research Paper (Runner-Up)</strong>Data Mining for Retail Optimization</div></li>
+          <li class="award-item"><div class="award-yr">2023</div><div class="award-text"><strong>2nd Prize &mdash; ML Hackathon</strong>Epoch, SRM University</div></li>
+          <li class="award-item"><div class="award-yr">2018</div><div class="award-text"><strong>Gold Medalist</strong>Computer Science Olympiad</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="exploring" style="background:var(--paper-warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
+  <div class="section-header reveal">
+    <span class="section-num">07</span>
+    <h2 class="section-title">Product Thinking</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:1100px">
+
+    <div style="display:flex;flex-direction:column;gap:1.3rem" class="reveal">
+
+      <div style="padding:1.6rem 1.8rem;border:1px solid var(--rule);background:var(--paper)">
+        <div style="font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem">Where Discovery Breaks for AI Products</div>
+        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.4;margin-bottom:.75rem">Traditional product discovery assumes users have intent. What happens when the product acts before they do?</div>
+        <p style="font-size:.84rem;color:var(--ink-soft);line-height:1.78">Most PM discovery frameworks &mdash; Jobs-to-be-Done, user story mapping, usability testing &mdash; were designed for reactive interfaces. Agentic AI products infer goals, execute autonomously, and produce outputs the user never explicitly requested. That breaks the standard discovery loop. PMs building in this space need to redefine what "user need" means, how to measure success, and how to design for trust and control simultaneously. I'm actively working through what a new discovery playbook looks like for AI-native products.</p>
+      </div>
+
+      <div style="padding:1.6rem 1.8rem;border:1px solid var(--rule);background:var(--paper)">
+        <div style="font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem">SaaS &rarr; AaaS: The Outcome Shift</div>
+        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.4;margin-bottom:.75rem">When software stops being a tool and starts being an agent, who is actually doing the work?</div>
+        <p style="font-size:.84rem;color:var(--ink-soft);line-height:1.78">SaaS charged you for access. AI as a Service charges for outcomes. That sounds like progress until you ask: what happens when the outcome is wrong? How do you price something you can't fully predict? And how do product teams research user needs when users themselves don't fully understand what the AI did? These aren't theoretical &mdash; they're the next five years of product design.</p>
+      </div>
+
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:1.3rem" class="reveal">
+
+      <div style="padding:1.6rem 1.8rem;border:1px solid var(--rule);background:var(--paper)">
+        <div style="font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem">Accountability Without Humans</div>
+        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.4;margin-bottom:.75rem">If an AI makes a decision that harms someone, and no human approved it &mdash; who is responsible?</div>
+        <p style="font-size:.84rem;color:var(--ink-soft);line-height:1.78">My work at the University of Sydney on AI adoption and platform governance sits directly in this question. Accountability is only meaningful when it can be assigned, enforced, and felt. As AI systems absorb more decision-making &mdash; in hiring, lending, healthcare, content moderation &mdash; the gap between "the algorithm decided" and "someone is responsible" becomes a product problem, a legal problem, and a trust problem simultaneously. I think about how product teams design for this accountability gap before regulators force them to.</p>
+      </div>
+
+      <div style="padding:1.6rem 1.8rem;border:1px solid var(--rule);background:var(--paper)">
+        <div style="font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem">Discovery for AI-Native Products</div>
+        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.4;margin-bottom:.75rem">Usability testing assumes a user doing something. What do you test when the AI is doing it for them?</div>
+        <p style="font-size:.84rem;color:var(--ink-soft);line-height:1.78">Classic discovery methods &mdash; think-alouds, task completion, interviews &mdash; were built for interfaces that respond to user input. Agentic AI systems don't wait for input. They infer intent, act autonomously, and produce outputs users didn't explicitly request. Product teams building AI-native products need entirely new frameworks for evaluating trust, comprehension, and perceived control. This is the product methodology gap I find most compelling right now &mdash; and the one most teams are quietly ignoring.</p>
+      </div>
+
+
+      <div style="padding:1.6rem 1.8rem;border:1px solid var(--rule);background:var(--paper)">
+        <div style="font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem;padding-bottom:.6rem;border-bottom:1px solid var(--rule)">AI Is Reshaping Every Vertical &mdash; Product Is at the Centre</div>
+
+        <div style="display:flex;flex-direction:column;gap:1.1rem">
+
+          <div>
+            <div style="font-family:var(--serif);font-size:.92rem;color:var(--ink);margin-bottom:.35rem">Product &times; Health AI</div>
+            <p style="font-size:.82rem;color:var(--ink-soft);line-height:1.75">AI is detecting haemorrhages, flagging tumours, and triaging ER patients &mdash; I've published in this space directly with my work on automated intracranial haemorrhage detection. But the harder product question isn't whether the AI is accurate. It's: does the clinician trust it enough to act on it? Does the interface surface uncertainty in a way the user can interpret? When AI assists a diagnosis, the product design determines whether that assistance helps or harms.</p>
+          </div>
+
+          <div style="border-top:1px solid var(--rule);padding-top:1rem">
+            <div style="font-family:var(--serif);font-size:.92rem;color:var(--ink);margin-bottom:.35rem">Product &times; Future of Work</div>
+            <p style="font-size:.82rem;color:var(--ink-soft);line-height:1.75">The real question for work-tool PMs isn't whether AI replaces jobs &mdash; it's whether the products we build for AI-assisted work keep humans in meaningful control. From my work at the University of Sydney, I saw how workers adapt their behaviour around AI tools in ways product teams never anticipated: over-trust, under-trust, workarounds. Getting that collaboration design right is the central product challenge of the next decade.</p>
+          </div>
+
+          <div style="border-top:1px solid var(--rule);padding-top:1rem">
+            <div style="font-family:var(--serif);font-size:.92rem;color:var(--ink);margin-bottom:.35rem">Product &times; Trust &amp; Safety</div>
+            <p style="font-size:.82rem;color:var(--ink-soft);line-height:1.75">Safety in AI products isn't just about preventing harm &mdash; it's about whether users can recognise when something has gone wrong. My metaverse platform work exposed how AI-driven environments create new product risks: misinformation that feels authoritative, decisions made without user awareness, manufactured trust. Building for safety in AI-native products means designing for legibility first &mdash; that's a product problem before it's a policy one.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal"><span class="section-num">08</span><h2 class="section-title">Core Competencies</h2><div class="section-rule"></div></div>
+  <div class="skills-grid">
+    <div class="skill-group reveal"><div class="skill-group-title">Product Management</div><ul class="skill-list"><li>Product Roadmap &amp; Backlog</li><li>PRD &amp; User Story Writing</li><li>Feature Prioritisation (RICE, MoSCoW)</li><li>Sprint Planning &amp; Agile</li><li>OKRs &amp; KPI Definition</li><li>Go-to-Market Strategy</li><li>Cross-Functional Collaboration</li></ul></div>
+    <div class="skill-group reveal"><div class="skill-group-title">Growth &amp; Analytics</div><ul class="skill-list"><li>A/B Testing &amp; Experimentation</li><li>Funnel &amp; Cohort Analysis</li><li>Retention &amp; Activation Metrics</li><li>North Star &amp; Growth Metrics</li><li>Python &middot; SQL &middot; NLP</li><li>Predictive Modelling</li><li>Data Visualisation</li></ul></div>
+    <div class="skill-group reveal"><div class="skill-group-title">User Research &amp; UX</div><ul class="skill-list"><li>User Interviews &amp; Surveys</li><li>Usability Testing</li><li>Jobs-to-be-Done Framework</li><li>Journey Mapping</li><li>Wireframing &amp; Prototyping</li><li>Qualitative Synthesis</li><li>Design Thinking</li></ul></div>
+    <div class="skill-group reveal"><div class="skill-group-title">AI &amp; Technical Depth</div><ul class="skill-list"><li>Machine Learning &middot; NLP &middot; LLM</li><li>Responsible AI &amp; Model Evaluation</li><li>Human-in-the-Loop Design</li><li>Technical Specifications</li><li>Engineering Collaboration</li><li>Trust &amp; Safety Design</li><li>Platform Governance</li></ul></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-left reveal">
+    <p class="footer-eyebrow">Open to PM &amp; APM opportunities</p>
+    <h2>Let's build<br>something <em>worth shipping.</em></h2>
+  </div>
+  <div class="footer-right reveal">
+    <a href="/cdn-cgi/l/email-protection#afc5cec6dcceccc7c6c1cd9f9aefc8c2cec6c381ccc0c2" class="contact-link"><div><span class="contact-link-label">Email</span><span class="__cf_email__" data-cfemail="7c161d150f1d1f1415121e4c493c1b111d1510521f1311">[email&#160;protected]</span></div></a>
+    
+    <a href="https://www.linkedin.com/in/jaisachin/" target="_blank" class="contact-link"><div><span class="contact-link-label">LinkedIn</span>linkedin.com/in/jaisachin</div></a>
+    <a href="https://github.com/jaisachinb" target="_blank" class="contact-link"><div><span class="contact-link-label">GitHub</span>github.com/jaisachinb</div></a>
+    <a href="https://scholar.google.com/citations?user=L_qzpc8AAAAJ&hl=en" target="_blank" class="contact-link"><div><span class="contact-link-label">Published Work</span>View Papers &amp; Patent</div></a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>&copy; 2026 Jai Sachin Baskar. All rights reserved.</p>
+  <p>Product Manager &middot; AI &amp; Data &middot; India</p>
+</div>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
